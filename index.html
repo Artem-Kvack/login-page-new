@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+<form id="loginForm">
+    
+            <form>
+                <div class="person"></div>
+<div class="input-box">
+    <input type="text" placeholder="" required class="input-label">
+    <label for="inputField" class="reset" id="username">User</label>
+    <i class='bx bxs-user'></i>
+</div>
+<div class="input-box">
+    <input type="password" placeholder="" required class="input-label" id="password">
+    <label for="inputField" class="reset">Password</label>
+    <i class='bx bxs-lock-alt'></i>
+</div class="btn-highlight">
+<button type="submit" class="btn" id="btn" >Login</button>
+</div>
+</form>
+</div>
+<script>
+const submitBtn = document.getElementById('btn');
+function test() {
+const username = document.getElementById('username').value;
+const password = document.getElementById('password').value;
+alert(" Your login: "  +  username  +  "Your password:"  +  password);
+}
+submitBtn.addEventListener('click', () => test());
+
+</script>
+</body>
+
+</html>
